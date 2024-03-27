@@ -1,8 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import { SearchBarContainer } from './components/SearchBarContainer';
+import React from 'react';
+import { SearchBarContainer } from './components/SearchBar/SearchBarContainer';
+
 
 function App() {
+  
   return (
     <div className="App">
       <header className="App-header">
