@@ -1,8 +1,11 @@
 import React from "react";
 import { Playlist } from "./Playlist";
 
-function PlaylistContainer() {
-    return <Playlist />
+function PlaylistContainer({ playlistName, trackList }) {
+    return <Playlist
+    trackList={trackList}
+    playlistName={playlistName}
+ />
 }
 
-export {PlaylistContainer};
+export { PlaylistContainer };

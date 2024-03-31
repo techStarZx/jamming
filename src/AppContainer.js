@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import App from './App';
 
 const dummyTrackList = [
@@ -35,13 +35,17 @@ const dummyTrackList = [
 ];
 
 function AppContainer() {
-  const [trackList, setTrackList] = useState(dummyTrackList);
+  const [trackListForResults, setTrackListForResults] = useState(dummyTrackList);
+  const [playlistName, setPlayListName] = useState('dummyPlayListName');
+  const [trackListForPlaylist, setTrackListForPlaylist] = useState(dummyTrackList);
 
   return (
     <App
-      trackList = {trackList} 
+      trackListForResults={trackListForResults}
+      trackListForPlaylist={trackListForPlaylist}
+      playlistName={playlistName}
     />
-  );
+  )
 }
 
 export default AppContainer;
