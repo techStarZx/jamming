@@ -1,9 +1,7 @@
 import React from "react";
 
-function Tracklist() {
-    return <div className='tracklistContainer'>
-        tracks goes here
-    </div>
+function Tracklist({tracks}) {
+    return <div className='tracklistContainer'> {tracks} </div>;
 }
 
 export {Tracklist};
