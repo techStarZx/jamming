@@ -1,10 +1,11 @@
 import React from 'react';
+import {TracklistContainer} from '../Tracklist/TracklistContainer';
 
-function SearchResults() {
+function SearchResults({trackList}) {
     return (
         <div className='results'>
             <h2>Results</h2>
-            <div>tracklist goes here</div>
+            <TracklistContainer  trackList = {trackList} />
         </div>
     );
 }
