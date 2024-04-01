@@ -38,9 +38,14 @@ function AppContainer() {
   const [trackListForResults, setTrackListForResults] = useState(dummyTrackList);
   const [playlistName, setPlayListName] = useState('dummyPlayListName');
   const [trackListForPlaylist, setTrackListForPlaylist] = useState([]);
+  
   function handleClickAddButton(e) {
     setTrackListForPlaylist(prev => [...prev, trackListForResults[e.target.id]] );
   }
+
+  function handleClickRemoveButton(e) {
+    setTrackListForPlaylist(prev => prev.filter((element, index) => index != e.target.id));
+    };
 
   return (
     <App
@@ -48,6 +53,7 @@ function AppContainer() {
       trackListForPlaylist={trackListForPlaylist}
       playlistName={playlistName}
       handleClickAddButton={handleClickAddButton}
+      handleClickRemoveButton={handleClickRemoveButton}
     />
   )
 }
