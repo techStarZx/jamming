@@ -6,12 +6,13 @@ import { SearchResultsContainer } from './components/SearchResults/SearchResults
 import { PlaylistContainer } from './components/Playlist/PlaylistContainer';
 
 
-function App({ trackListForResults, trackListForPlaylist, playlistName }) {
+function App({ trackListForResults, trackListForPlaylist, playlistName, handleClickAddButton }) {
   return (
     <div className="App">
       <SearchBarContainer />
       <SearchResultsContainer
         trackList={trackListForResults}
+        handleClickAddButton={handleClickAddButton}
       />
       <PlaylistContainer
         trackList={trackListForPlaylist}
