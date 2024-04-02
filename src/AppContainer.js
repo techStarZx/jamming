@@ -6,31 +6,36 @@ const dummyTrackList = [
     name: 'a1',
     artist: 'a2',
     album: 'a3',
-    id: 0
+    id: 0,
+    uri: 'https://open.spotify.com/track/2h4MTQZP8quVwuwrtIPErD'
   },
   {
     name: 'b1',
     artist: 'b2',
     album: 'b3',
-    id: 1
+    id: 1,
+    uri: 'https://open.spotify.com/track/1Yk0cQdMLx5RzzFTYwmuld'
   },
   {
     name: 'c1',
     artist: 'c2',
     album: 'c3',
-    id: 2
+    id: 2,
+    uri: 'https://open.spotify.com/track/1Yk0cQdMLx5RzzFTYwmuld'
   },
   {
     name: 'd1',
     artist: 'd2',
     album: 'd3',
-    id: 3
+    id: 3,
+    uri: 'https://open.spotify.com/track/1Yk0cQdMLx5RzzFTYwmuld'
   },
   {
     name: 'e1',
     artist: 'e2',
     album: 'e3',
-    id: 4
+    id: 4,
+    uri: 'https://open.spotify.com/track/1Yk0cQdMLx5RzzFTYwmuld'
   }
 ];
 
@@ -52,7 +57,12 @@ function AppContainer() {
   }
 
   function handleClickSavePlaylistButton(e) {
-    alert(`You enter playlist name: ${playlistName}`);
+    // spotify uses array of uri properties to save the tracks in the playlist
+    const uriArr = trackListForPlaylist.map(track => track.uri);
+    alert(`${playlistName}
+           ${uriArr}`);
+    setPlayListName('');
+    setTrackListForPlaylist([]);
   }
 
   return (
