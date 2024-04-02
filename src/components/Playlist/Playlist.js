@@ -9,6 +9,11 @@ function Playlist({ playlistName, trackList, handleClickRemoveButton, handleChan
                 placeholder='enter playlist name'
                 value={playlistName}
                 onChange={handleChangePlaylistNameInput}
+                onKeyDown={event => {
+                    if(event.key == 'Enter') {
+                        handleClickSavePlaylistButton(event);
+                    }
+                }}
             />
             <TracklistContainer  trackList = {trackList} buttonText="Remove" handleClickButton={handleClickRemoveButton} />
             <button onClick={handleClickSavePlaylistButton}>Save To Spotify</button>

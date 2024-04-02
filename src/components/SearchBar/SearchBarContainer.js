@@ -17,7 +17,8 @@ function SearchBarContainer() {
         <div className='searchBarContainer'>
             <SearchBar 
                 searchTerm={searchTerm} 
-                handleChange={handleChange} />
+                handleChange={handleChange}
+                handleClick={handleClick} />
             <br />
             <SearchButton 
                 handleClick={handleClick} />
