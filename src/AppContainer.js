@@ -36,7 +36,7 @@ const dummyTrackList = [
 
 function AppContainer() {
   const [trackListForResults, setTrackListForResults] = useState(dummyTrackList);
-  const [playlistName, setPlayListName] = useState('dummyPlayListName');
+  const [playlistName, setPlayListName] = useState('');
   const [trackListForPlaylist, setTrackListForPlaylist] = useState([]);
   
   function handleClickAddButton(e) {
@@ -45,7 +45,15 @@ function AppContainer() {
 
   function handleClickRemoveButton(e) {
     setTrackListForPlaylist(prev => prev.filter((element, index) => index != e.target.id));
-    };
+    }
+
+  function handleChangePlaylistNameInput(e) {
+    setPlayListName(e.target.value);
+  }
+
+  function handleClickSavePlaylistButton(e) {
+    alert(`You enter playlist name: ${playlistName}`);
+  }
 
   return (
     <App
@@ -54,6 +62,8 @@ function AppContainer() {
       playlistName={playlistName}
       handleClickAddButton={handleClickAddButton}
       handleClickRemoveButton={handleClickRemoveButton}
+      handleChangePlaylistNameInput={handleChangePlaylistNameInput}
+      handleClickSavePlaylistButton={handleClickSavePlaylistButton}
     />
   )
 }

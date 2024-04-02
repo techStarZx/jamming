@@ -1,16 +1,17 @@
 import React from 'react';
 import {TracklistContainer} from '../Tracklist/TracklistContainer';
 
-function Playlist({ playlistName, trackList, handleClickRemoveButton }) {
+function Playlist({ playlistName, trackList, handleClickRemoveButton, handleChangePlaylistNameInput, handleClickSavePlaylistButton }) {
     return (
         <div className='playlistContainer'>
             <input
                 type='text'
                 placeholder='enter playlist name'
                 value={playlistName}
+                onChange={handleChangePlaylistNameInput}
             />
             <TracklistContainer  trackList = {trackList} buttonText="Remove" handleClickButton={handleClickRemoveButton} />
-            <button>Save To Spotify</button>
+            <button onClick={handleClickSavePlaylistButton}>Save To Spotify</button>
         </div>
     );
 }
