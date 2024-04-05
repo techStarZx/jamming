@@ -40,8 +40,8 @@ const dummyTrackList = [
 ];
 
 function AppContainer() {
-  const [trackListForResults, setTrackListForResults] = useState(dummyTrackList);
   const [playlistName, setPlayListName] = useState('');
+  const [trackListForResults, setTrackListForResults] = useState(dummyTrackList);
   const [trackListForPlaylist, setTrackListForPlaylist] = useState([]);
   
   function handleClickAddButton(e) {
