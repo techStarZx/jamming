@@ -3,6 +3,8 @@ import { Tracklist } from "./Tracklist";
 import {TrackContainer} from '../Track/TrackContainer';
 
 function TracklistContainer({trackList, handleClickButton, buttonText}) {
+    console.log(trackList);
+    // alert(trackList)
     let tracks = trackList.map((track, index) => {
         return <TrackContainer track={track} handleClickButton={handleClickButton} buttonText={buttonText} indexOfTrack={index} />
     });

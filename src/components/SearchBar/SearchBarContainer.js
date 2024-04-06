@@ -2,26 +2,18 @@ import React, { useState } from 'react';
 import { SearchBar } from './SearchBar';
 import { SearchButton } from './SearchButton';
 
-function SearchBarContainer() {
-    const [searchTerm, setSearchTerm] = useState('');
+function SearchBarContainer({handleClickSearchButton, handleChangeSearchInput, searchTerm}) {
 
-    const handleChange = (event) => {
-        setSearchTerm(event.target.value);
-    };
-
-    const handleClick = () => {
-        alert('search button clicked');
-    }
 
     return (
         <div className='searchBarContainer'>
             <SearchBar 
                 searchTerm={searchTerm} 
-                handleChange={handleChange}
-                handleClick={handleClick} />
+                handleChange={handleChangeSearchInput}
+                handleClick={handleClickSearchButton} />
             <br />
             <SearchButton 
-                handleClick={handleClick} />
+                handleClick={handleClickSearchButton} />
         </div>
     );
 }
