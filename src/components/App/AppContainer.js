@@ -61,8 +61,7 @@ function AppContainer() {
   function handleClickSavePlaylistButton(e) {
     // spotify uses array of uri properties to save the tracks in the playlist
     const uriArr = trackListForPlaylist.map(track => track.uri);
-    alert(`${playlistName}
-           ${uriArr}`);
+    Spotify.savePlaylist(playlistName, uriArr);
     setPlayListName('');
     setTrackListForPlaylist([]);
   }
