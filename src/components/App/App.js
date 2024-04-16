@@ -3,11 +3,12 @@ import React from 'react';
 import { SearchBarContainer } from '../SearchBar/SearchBarContainer';
 import { SearchResultsContainer } from '../SearchResults/SearchResultsContainer';
 import { PlaylistContainer } from '../Playlist/PlaylistContainer';
-
+import Header from '../Header/Header';
 
 function App({ trackListForResults, trackListForPlaylist, playlistName, handleClickAddButton, handleClickRemoveButton, handleChangePlaylistNameInput, handleClickSavePlaylistButton, handleClickSearchButton, handleChangeSearchInput, searchTerm }) {
   return (
     <div className="App">
+      <Header />
       <SearchBarContainer
         handleClickSearchButton={handleClickSearchButton}
         handleChangeSearchInput={handleChangeSearchInput}
