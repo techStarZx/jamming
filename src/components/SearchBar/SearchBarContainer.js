@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { SearchBar } from './SearchBar';
 import { SearchButton } from './SearchButton';
+import styles from './SearchBarContainer.module.css';
 
 function SearchBarContainer({handleClickSearchButton, handleChangeSearchInput, searchTerm}) {
 
 
     return (
-        <div className='searchBarContainer'>
+        <div className={styles.searchBarContainer}>
             <SearchBar 
                 searchTerm={searchTerm} 
                 handleChange={handleChangeSearchInput}

@@ -4,6 +4,7 @@ import { SearchBarContainer } from '../SearchBar/SearchBarContainer';
 import { SearchResultsContainer } from '../SearchResults/SearchResultsContainer';
 import { PlaylistContainer } from '../Playlist/PlaylistContainer';
 import Header from '../Header/Header';
+import '../customFonts.css';
 
 function App({ trackListForResults, trackListForPlaylist, playlistName, handleClickAddButton, handleClickRemoveButton, handleChangePlaylistNameInput, handleClickSavePlaylistButton, handleClickSearchButton, handleChangeSearchInput, searchTerm }) {
   return (
