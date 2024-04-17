@@ -1,12 +1,13 @@
 import React from 'react';
 import {TracklistContainer} from '../Tracklist/TracklistContainer';
+import styles from './Playlist.module.css';
 
 function Playlist({ playlistName, trackList, handleClickRemoveButton, handleChangePlaylistNameInput, handleClickSavePlaylistButton }) {
     return (
-        <div className='playlistContainer'>
+        <div className={styles.playlist}>
             <input
                 type='text'
-                placeholder='enter playlist name'
+                placeholder='Enter New Playlist Name'
                 value={playlistName}
                 onChange={handleChangePlaylistNameInput}
                 onKeyDown={event => {
@@ -15,8 +16,8 @@ function Playlist({ playlistName, trackList, handleClickRemoveButton, handleChan
                     }
                 }}
             />
-            <TracklistContainer  trackList = {trackList} buttonText="Remove" handleClickButton={handleClickRemoveButton} />
-            <button onClick={handleClickSavePlaylistButton}>Save To Spotify</button>
+            <TracklistContainer  trackList = {trackList} buttonText="-" handleClickButton={handleClickRemoveButton} />
+            <button onClick={handleClickSavePlaylistButton} className={styles.saveBtn}>Save To Spotify</button>
         </div>
     );
 }

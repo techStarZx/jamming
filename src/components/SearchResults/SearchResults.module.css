@@ -1,0 +1,16 @@
+.searchResult {
+    width: 470px;
+    height: 950px;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: rgba(1, 12, 63, 0.7);
+    box-shadow: 0 4px 2px 2px #000000;
+}
+
+.h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.77rem;
+    color: #fff;
+    margin: 0;
+    font-weight: 600;
+}

@@ -15,6 +15,7 @@ function App({ trackListForResults, trackListForPlaylist, playlistName, handleCl
         handleChangeSearchInput={handleChangeSearchInput}
         searchTerm={searchTerm}
       />
+      <main>
       <SearchResultsContainer
         trackList={trackListForResults}
         handleClickAddButton={handleClickAddButton}
@@ -26,6 +27,7 @@ function App({ trackListForResults, trackListForPlaylist, playlistName, handleCl
         handleChangePlaylistNameInput={handleChangePlaylistNameInput}
         handleClickSavePlaylistButton={handleClickSavePlaylistButton}
       />
+      </main>
     </div>
   );
 }

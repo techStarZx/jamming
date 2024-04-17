@@ -1,21 +1,23 @@
 import React from "react";
+import styles from './Track.module.css';
 
-function Track({name, artist, album, id, handleClickButton, buttonText, indexOfTrack}) {
+function Track({ name, artist, album, id, handleClickButton, buttonText, indexOfTrack }) {
     return (
-        <div 
-            className='trackContainer'
+        <div
+            className={styles.track}
             key={`track${id}`}
         >
-            <p key='name'>{name}</p>
-            <p key='artist'>{artist}</p>
-            <p key='album'>{album}</p>
-            <button 
-              id={indexOfTrack} 
-              onClick={handleClickButton}>
-              {buttonText}
+            <div className="trackInfo">
+                <h3>{name}</h3>
+                <p>{artist} | {album}</p>
+            </div>
+            <button
+                id={indexOfTrack}
+                onClick={handleClickButton}>
+                {buttonText}
             </button>
         </div>
-        );
+    );
 }
 
-export {Track};
+export { Track };

@@ -1,6 +1,14 @@
 .app {
     background-image: url('./background_photo_desktop.webp');
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 114px;
+    gap: 50px;
+    padding-bottom: 142px;
 }

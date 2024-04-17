@@ -1,0 +1,35 @@
+.track {
+    color: #fff;
+    border-bottom: 1px solid rgba(256, 256, 256, .8);
+    font-family: "Work Sans", sans-serif;
+    padding: 19px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.track h3 {
+    margin: 0;
+    margin-bottom: .22rem;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.track p {
+    margin: 0;
+    font-size: 14.94px;
+    font-weight: 300;
+}
+
+.track button {
+    cursor: pointer;
+    color: #fff;
+    background-color: transparent;
+    font-size: 18.9px;
+    font-weight: 500;
+    border: none;
+    transition: color .25s;
+}
+
+.track button:hover {
+    color: rgba(265, 265, 265, .5);
+}
