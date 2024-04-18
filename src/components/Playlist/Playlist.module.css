@@ -1,10 +1,10 @@
 .playlist {
-    width: 348px;
-    height: 900px;
-    padding: 40px 20px;
+    width: 348rem;
+    height: 900rem;
+    padding: 40rem 20rem;
     overflow-y: auto;
     background-color: rgba(1, 12, 63, 0.7);
-    box-shadow: 0 4px 2px 2px #000000;
+    box-shadow: 0 4rem 2rem 2rem #000000;
 }
 
 .playlist input {
@@ -12,24 +12,24 @@
     border: 0;
     outline: 0;
     background: transparent;
-    border-bottom: 1px solid #6f6f6f;
-    font-size: 1.55rem;
+    border-bottom: 1rem solid #6f6f6f;
+    font-size: 24.8rem;
     color: #fff;
 }
 
 .playlist .saveBtn {
     cursor: pointer;
-    width: 10rem;
-    margin-top: 1.27rem;
-    font-size: 14.94px;
+    width: 160rem;
+    margin-top: 20.32rem;
+    font-size: 14.94rem;
     font-weight: 500;
     font-family: "Work Sans", sans-serif;
     color: #fff;
     background-color: #6c41ec;
     transition: background-color .25s;
     border: 0;
-    padding: .77rem;
-    border-radius: 54px;
+    padding: 12.32rem;
+    border-radius: 54rem;
     display: block;
     margin-left: auto;
     margin-right: auto;

@@ -2,11 +2,11 @@
 
 .searchButton {
     cursor: pointer;
-    width: 8.4rem;
-    height: 44px;
-    border-radius: 54px;
+    width: 164.4rem;
+    height: 44rem;
+    border-radius: 54rem;
     background-color: #010c3f;
-    font-size: .96rem;
+    font-size: 15.36rem;
     font-weight: 500;
     font-family: 'Work Sans', sans-serif;
     transition: background-color .25s;

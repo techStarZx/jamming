@@ -1,15 +1,15 @@
 .searchResult {
-    width: 470px;
-    height: 950px;
-    padding: 15px;
+    width: 470rem;
+    height: 950rem;
+    padding: 15rem;
     overflow-y: auto;
     background-color: rgba(1, 12, 63, 0.7);
-    box-shadow: 0 4px 2px 2px #000000;
+    box-shadow: 0 4rem 2rem 2rem #000000;
 }
 
 .h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.77rem;
+    font-size: 28.32rem;
     color: #fff;
     margin: 0;
     font-weight: 600;
