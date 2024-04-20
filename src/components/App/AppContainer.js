@@ -47,7 +47,9 @@ function AppContainer() {
   const [searchTerm, setSearchTerm] = useState('');
 
   function handleClickAddButton(e) {
-    setTrackListForPlaylist(prev => [...prev, trackListForResults[e.target.id]]);
+    if(!trackListForPlaylist.includes(trackListForResults[e.target.id])) {  // checking if track is already in the playlist
+      setTrackListForPlaylist(prev => [...prev, trackListForResults[e.target.id]]);
+    }
   }
 
   function handleClickRemoveButton(e) {
